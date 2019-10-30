@@ -6,11 +6,11 @@ int main()
 	int a[n+1];
 	for(i=0;i<n+1;i++)
 		a[i]=0;      
-	for(i=2;i<=n/2;i++)
+	for(i=2;i*i<n;i++)
 	{
 		if(a[i]==0)
 		{
-			for(j=2*i;j<=n;j=j+i)
+			for(j=i*i;j<=n;j=j+i)
 				a[j]=1;
 		}
 	}
